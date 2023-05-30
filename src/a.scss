@@ -1,0 +1,24 @@
+@media (min-width: 768px) {
+  .spendingCard {
+    position: fixed;
+    bottom: 0;
+    right: -0%;
+    width: 50%;
+    height: 75%;
+    background-color: rgba($color: #008bf1, $alpha: 0.9);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    animation: ellipse-appear 0.5s ease-in-out forwards;
+    border-top-left-radius: 100%;
+    box-sizing: content-box;
+  }
+  @keyframes ellipse-appear {
+    from {
+      transform: translateX(50%);
+    }
+    to {
+      transform: translateX(0);
+    }
+  }
+}
